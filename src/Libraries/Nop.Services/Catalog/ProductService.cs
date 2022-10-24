@@ -39,6 +39,7 @@ namespace Nop.Services.Catalog
         protected readonly ILocalizationService _localizationService;
         protected readonly IProductAttributeParser _productAttributeParser;
         protected readonly IProductAttributeService _productAttributeService;
+        protected readonly IProductSearchPluginManager _productSearchPluginManager;
         protected readonly IRepository<Category> _categoryRepository;
         protected readonly IRepository<CrossSellProduct> _crossSellProductRepository;
         protected readonly IRepository<DiscountProductMapping> _discountProductMappingRepository;
@@ -80,6 +81,7 @@ namespace Nop.Services.Catalog
             ILocalizationService localizationService,
             IProductAttributeParser productAttributeParser,
             IProductAttributeService productAttributeService,
+            IProductSearchPluginManager productSearchPluginManager,
             IRepository<Category> categoryRepository,
             IRepository<CrossSellProduct> crossSellProductRepository,
             IRepository<DiscountProductMapping> discountProductMappingRepository,
@@ -117,6 +119,7 @@ namespace Nop.Services.Catalog
             _localizationService = localizationService;
             _productAttributeParser = productAttributeParser;
             _productAttributeService = productAttributeService;
+            _productSearchPluginManager = productSearchPluginManager;
             _categoryRepository = categoryRepository;
             _crossSellProductRepository = crossSellProductRepository;
             _discountProductMappingRepository = discountProductMappingRepository;
@@ -897,14 +900,18 @@ namespace Nop.Services.Catalog
 
             if (!string.IsNullOrEmpty(keywords))
             {
-                var langs = await _languageService.GetAllLanguagesAsync(showHidden: true);
-
-                //Set a flag which will to points need to search in localized properties. If showHidden doesn't set to true should be at least two published languages.
-                var searchLocalizedValue = languageId > 0 && langs.Count >= 2 && (showHidden || langs.Count(l => l.Published) >= 2);
 
                 IQueryable<int> productsByKeywords;
 
-                productsByKeywords =
+                var customer = await _workContext.GetCurrentCustomerAsync();
+                var activeProductSearchProvider = await _productSearchPluginManager.LoadPrimaryPluginAsync(customer, storeId);
+                if (activeProductSearchProvider is not null)
+                {
+                    productsByKeywords = (await activeProductSearchProvider.SearchProductsAsync(keywords)).AsQueryable();
+                }
+                else
+                {
+                    productsByKeywords =
                         from p in _productRepository.Table
                         where p.Name.Contains(keywords) ||
                             (searchDescriptions &&
@@ -912,6 +919,12 @@ namespace Nop.Services.Catalog
                             (searchManufacturerPartNumber && p.ManufacturerPartNumber == keywords) ||
                             (searchSku && p.Sku == keywords)
                         select p.Id;
+                }
+
+                var langs = await _languageService.GetAllLanguagesAsync(showHidden: true);
+
+                //Set a flag which will to points need to search in localized properties. If showHidden doesn't set to true should be at least two published languages.
+                var searchLocalizedValue = languageId > 0 && langs.Count >= 2 && (showHidden || langs.Count(l => l.Published) >= 2);
 
                 if (searchLocalizedValue)
                 {
