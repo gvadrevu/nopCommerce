@@ -31,22 +31,1421 @@
     <!-- We copy the entire \App_Data directory. But we ignore JSON files and data protection keys  -->
     <Content Include="App_Data\**" CopyToPublishDirectory="PreserveNewest" Exclude="App_Data\*.json" />
     <Content Remove="App_Data\*.json" />
-    <Content Update="App_Data\DataProtectionKeys\*.xml" CopyToPublishDirectory="Never" />
+    <Content Update="App_Data\DataProtectionKeys\*.xml" CopyToPublishDirectory="PreserveNewest" />
 
     <Compile Remove="Plugins\**;Themes\**" />
     <Content Remove="Plugins\**;Themes\**" />
     <EmbeddedResource Remove="Plugins\**;Themes\**" />
     <None Remove="Plugins\**;Themes\**" />
-    <None Include="Plugins\**" CopyToPublishDirectory="PreserveNewest" Exclude="Plugins\**\runtimes\**;Plugins\**\ref\**;Plugins\**\*.pdb" />
-
     <Content Include="Themes\**" CopyToPublishDirectory="PreserveNewest" CopyToOutputDirectory="Never" />
 
     <!-- We copy the \Logs directory -->
     <Content Include="Logs\**" CopyToPublishDirectory="PreserveNewest" />
 
-    <None Update="Areas\Admin\sitemap.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-AE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-AE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-AE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-AE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-DZ\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-DZ\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-DZ\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-DZ\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KW\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KW\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KW\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-KW\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MR\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MR\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MR\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-MR\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SD\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SD\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SD\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SD\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SY\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SY\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SY\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-SY\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-YE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-YE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-YE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ar-YE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-ES-VALENCIA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-ES-VALENCIA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-ES-VALENCIA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-ES-VALENCIA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-IT\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-IT\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-IT\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ca-IT\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\cy\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\cy\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\cy\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\cy\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-CH\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-CH\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-CH\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-CH\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-IT\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-IT\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-IT\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\de-IT\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\el-CY\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\el-CY\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\el-CY\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\el-CY\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-150\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-150\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-150\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-150\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-AE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-AE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-AE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-AE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BB\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BB\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BB\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BB\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BW\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BW\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BW\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-BW\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-DG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-DG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-DG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-DG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GH\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GH\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GH\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GH\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GI\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GI\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GI\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GI\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-GU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-HK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-HK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-HK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-HK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KY\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KY\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KY\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-KY\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MH\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MH\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MH\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MH\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MO\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MO\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MO\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MO\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MS\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MS\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MS\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MS\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MT\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MT\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MT\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MT\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-MU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NF\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NF\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NF\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NF\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NR\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NR\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NR\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NR\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NZ\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NZ\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NZ\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-NZ\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PW\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PW\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PW\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-PW\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SC\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SC\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SC\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SC\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SB\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SB\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SB\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SB\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SD\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SD\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SD\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SD\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SL\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SL\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SL\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SL\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SX\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SX\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SX\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-SX\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-UG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-UG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-UG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-UG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VI\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VI\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VI\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VI\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-VU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZW\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZW\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZW\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\en-ZW\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-DO\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-DO\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-DO\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-DO\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-GT\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-GT\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-GT\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-GT\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-NI\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-NI\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-NI\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-NI\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PY\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PY\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PY\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-PY\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-SV\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-SV\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-SV\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-SV\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-US\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-US\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-US\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\es-US\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\et\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\et\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\et\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\et\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\eu\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\eu\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\eu\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\eu\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fa\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fa\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fa\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fa\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fi\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fi\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fi\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fi\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BJ\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BJ\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BJ\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BJ\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BL\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BL\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BL\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-BL\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-DZ\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-DZ\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-DZ\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-DZ\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GF\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GF\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GF\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GF\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GN\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GN\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GN\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-GN\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-KM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-KM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-KM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-KM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MF\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MF\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MF\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MF\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MR\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MR\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MR\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MR\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-MU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-PM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-PM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-PM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-PM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SC\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SC\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SC\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SC\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SY\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SY\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SY\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-SY\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-VU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-VU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-VU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\fr-VU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\id\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\id\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\id\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\id\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-SM\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-SM\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-SM\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-SM\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-VA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-VA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-VA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\it-VA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\jv\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\jv\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\jv\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\jv\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ko\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ko\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ko\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ko\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lo\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lo\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lo\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lo\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lt\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lt\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lt\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\lt\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-AW\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-AW\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-AW\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-AW\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BQ\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BQ\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BQ\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-BQ\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-SX\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-SX\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-SX\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\nl-SX\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\or\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\or\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\or\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\or\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pa-Guru\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pa-Guru\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pa-Guru\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pa-Guru\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ps-PK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ps-PK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ps-PK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ps-PK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-CV\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-CV\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-CV\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-CV\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-LU\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-LU\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-LU\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\pt-LU\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\so-KE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\so-KE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\so-KE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\so-KE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sq-XK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sq-XK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sq-XK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sq-XK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-BA\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-BA\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-BA\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-BA\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-ME\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-ME\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-ME\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Cyrl-ME\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Latn-XK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Latn-XK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Latn-XK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sr-Latn-XK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sv-AX\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sv-AX\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sv-AX\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sv-AX\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-KE\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-KE\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-KE\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-KE\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-UG\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-UG\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-UG\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\sw-UG\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta-LK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta-LK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta-LK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\ta-LK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\th\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\th\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\th\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\th\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\tr\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\tr\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\tr\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\tr\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-HK\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-HK\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-HK\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-HK\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-MO\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-MO\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-MO\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\temp\zh-Hans-MO\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\en\ca-gregorian.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\en\numbers.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\en\currencies.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\lib_npm\cldr-data\main\en\timeZoneNames.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -69,7 +1468,7 @@
       <!-- Get plugin description files to get plugin paths -->
       <PluginsDescription Include="$(MSBuildProjectDirectory)\Plugins\**\plugin.json;" />
       <!-- Get paths for all plugins -->
-      <PluginsFolders Include="@(PluginsDescription->'%(relativedir)')" />
+      <PluginsFolders Include="@(PluginsDescription-&gt;'%(relativedir)')" />
 
       <!-- Get paths for ClearPluginAssemblies project -->
       <ClearPluginAssemblies Include="$(MSBuildProjectDirectory)\..\..\Build\ClearPluginAssemblies.proj" />
