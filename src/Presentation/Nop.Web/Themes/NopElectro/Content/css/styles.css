@@ -824,6 +824,8 @@ td.product-picture img {
   z-index: 1;
   border-bottom: 1px solid #f5f5f5;
   z-index: 2;
+  background-color: #0d50af;
+  color: #fff;
 }
 
 .header-selectors-wrapper {
@@ -6228,6 +6230,7 @@ pre {
   .header-links span, .header-links a {
     line-height: 20px;
   }
+   
 
   .header-links-wrapper {
     padding: 5px 0 12px;
@@ -7558,13 +7561,14 @@ pre {
         line-height: 20px;
         font-size: 14px; /*reset zeroing*/
         font-weight: bold;
-        color: #e73942;
+        color: #0d50af;
         cursor: pointer;
         text-transform: uppercase;
       }
 
         .header-menu > ul > li > a:hover {
           text-decoration: none;
+          color: #e73942 !important;
         }
 
   .header-menu .sublist {
@@ -8430,3 +8434,16 @@ pre {
   }
 }
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+.header-links ul li a:hover {
+  color: #8ab3ed !important;
+}
