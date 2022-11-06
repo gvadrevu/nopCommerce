@@ -6237,6 +6237,8 @@ pre {
     position: relative;
     width: 90%;
     margin: 0 auto 30px;
+    border: 2px solid #ffb900;
+    background: #fff;
   }
 
   .menu-toggle {
@@ -7521,7 +7523,8 @@ pre {
     margin: 0 auto 30px;
     padding: 0;
     text-align: center;
-    background: #e73942;
+    background: #fff;
+    border: 2px solid #e73942;
   }
 
   .menu-toggle, 
@@ -7540,7 +7543,7 @@ pre {
 
     .header-menu > ul > li {
       display: inline-block;
-      border-left: 1px solid #777;
+      border-left: 1px solid #fff;
       padding: 0;
       vertical-align: middle;
     }
@@ -7555,7 +7558,7 @@ pre {
         line-height: 20px;
         font-size: 14px; /*reset zeroing*/
         font-weight: bold;
-        color: #fff;
+        color: #e73942;
         cursor: pointer;
         text-transform: uppercase;
       }
